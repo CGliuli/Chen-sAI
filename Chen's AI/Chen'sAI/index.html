@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <!-- Swiper CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 照片轮播 -->
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="imgs/image1.jpg" alt="照片1">
+                <div class="slide-caption">美丽的风景</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="imgs/image2.jpg" alt="照片2">
+                <div class="slide-caption">精彩的时刻</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="imgs/image3.jpg" alt="照片3">
+                <div class="slide-caption">难忘的回��</div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+    <section class="about-me">
+        <div class="container">
+            <h1>你好，我是琉璃</h1>
+            <p class="subtitle">前端开发者 / 设计爱好者</p>
+            <div class="description">
+                <p>热爱编程和设计的创作者，专注于打造优秀的用户体验。</p>
+                <p>擅长 HTML、CSS、JavaScript 等前端技术，热衷于探索新技术和创新解决方案。</p>
+                <p>欢迎通过下方的社交媒体链接与我联系，或者使用右下角的AI助手了解更多关于我的信息。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI对话部分 -->
+    <section class="ai-chat-section">
+        <div class="container">
+            <h2>与AI助手对话</h2>
+            <div class="chat-container">
+                <div class="chat-messages" id="chatMessages"></div>
+                <div class="chat-input-container">
+                    <input type="text" id="messageInput" placeholder="输入消息...">
+                    <button id="sendMessage">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 社交媒体链接 -->
+    <footer>
+        <div class="social-links">
+            <a href="https://space.bilibili.com/327354084" target="_blank" class="social-link" title="访问我的B站主页">
+                <svg class="bilibili-icon" viewBox="0 0 1024 1024" width="24" height="24">
+                    <path d="M777.514667 131.669333a53.333333 53.333333 0 0 1 0 75.434667L728.746667 255.829333h49.92A160 160 0 0 1 938.666667 415.829333v320a160 160 0 0 1-160 160H245.333333A160 160 0 0 1 85.333333 735.829333v-320a160 160 0 0 1 160-160h49.749334L246.4 207.104a53.333333 53.333333 0 1 1 75.392-75.434667l113.152 113.152c3.370667 3.370667 6.186667 7.04 8.448 10.965334h137.088c2.261333-3.925333 5.077333-7.594667 8.448-10.965334l113.152-113.152a53.333333 53.333333 0 0 1 75.434667 0z m1.152 231.253334H245.333333a53.333333 53.333333 0 0 0-53.333333 53.333333v320a53.333333 53.333333 0 0 0 53.333333 53.333333h533.333334a53.333333 53.333333 0 0 0 53.333333-53.333333v-320a53.333333 53.333333 0 0 0-53.333333-53.333333zM341.333333 469.333333a53.333333 53.333333 0 1 1 0 106.666667 53.333333 53.333333 0 0 1 0-106.666667z m341.333334 0a53.333333 53.333333 0 1 1 0 106.666667 53.333333 53.333333 0 0 1 0-106.666667z" fill="currentColor"/>
+                </svg>
+            </a>
+            <a href="https://www.xiaohongshu.com/user/profile/61d1a5970000000010004330" target="_blank" class="social-link" title="访问我的小红书">
+                <svg class="xiaohongshu-icon" viewBox="0 0 1024 1024" width="24" height="24">
+                    <path d="M512 0C229.2 0 0 229.2 0 512s229.2 512 512 512 512-229.2 512-512S794.8 0 512 0zm244.4 633.7c-24.1 57.3-86.5 102.7-160.3 102.7-73.9 0-136.2-45.4-160.3-102.7-24.1 57.3-86.5 102.7-160.3 102.7v-51.3c44.3 0 80.2-35.9 80.2-80.2s-35.9-80.2-80.2-80.2v-51.3c73.9 0 136.2 45.4 160.3 102.7 24.1-57.3 86.5-102.7 160.3-102.7s136.2 45.4 160.3 102.7c24.1-57.3 86.5-102.7 160.3-102.7v51.3c-44.3 0-80.2 35.9-80.2 80.2s35.9 80.2 80.2 80.2v51.3c-73.8-.1-136.2-45.4-160.3-102.7z" fill="currentColor"/>
+                </svg>
+            </a>
+        </div>
+        <div class="copyright">
+            © 2024 琉璃. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Swiper JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
